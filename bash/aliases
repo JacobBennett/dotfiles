@@ -1,0 +1,27 @@
+###########
+# ALIASES #
+###########
+# find more cool ones at http://alias.sh/most-popular/usage
+
+alias facetime='sudo killall VDCAssistant'
+alias la='ls -a'
+alias c='clear'
+alias webd='cd /Applications/MAMP/htdocs/'
+
+alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions'
+
+alias emulate='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+
+#GIT ALIASES
+
+alias gs='git st'
+alias gaa='git add -A'
+alias gdiff='git diff | subl'
+
+#SCREENSHOT ALIASES
+	#use name or location after ss
+	#then call ssdone when finished with changes
+alias ss='defaults write com.apple.screencapture'
+alias ssshadow='defaults write com.apple.screencapture disable-shadow -bool false'
+alias ssnoshadow='defaults write com.apple.screencapture disable-shadow -bool true'
+alias ssdone='killall SystemUIServer'

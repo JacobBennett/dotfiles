@@ -1,0 +1,69 @@
+
+#ALL my custom BASH functions
+
+#copy rsa public key
+function copykey() {
+  cat ~/.ssh/id_rsa.pub | pbcopy
+}
+
+# php artisan shortcut
+function pa() {
+  php artisan "$@"
+}
+
+function pam() {
+  php artisan migrate $1 --env=local
+}
+
+function pal() {
+  php artisan "$@" --env=local
+}
+
+
+#ALL GIT FUNCTIONS
+
+function gb() {
+  git branch "$@"
+}
+
+function gm() {
+  git merge "$@"
+}
+
+#git shortcuts for pushing to
+#master or dev or generic
+function gp() {
+  if [ "$1" = "m" ]; then
+
+    git push origin master
+
+  elif [ "$1" = "d" ]; then
+
+    git push origin dev
+
+  elif [ "$1" = "f" ]; then
+
+    git push fortrabbit master
+
+  else
+
+    git push "$@"
+
+  fi
+
+}
+
+#git shortcut for git checkout
+function gch() {
+  git checkout "$@"
+}
+
+#used to create a new branch and switch to it
+function gnb() {
+  git checkout -b $1
+}
+
+#git commit shortcut
+function gcm() {
+  git commit -m "$@"
+}
