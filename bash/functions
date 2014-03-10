@@ -19,6 +19,30 @@ function pal() {
   php artisan "$@" --env=local
 }
 
+#show all files
+
+#git shortcuts for pushing to
+#master or dev or generic
+function showhidden() {
+  if [ "$1" = "YES" ]; then
+
+    defaults write com.apple.finder AppleShowAllFiles -boolean TRUE
+    killall Finder
+
+  elif [ "$1" = "NO" ]; then
+
+    defaults write com.apple.finder AppleShowAllFiles -boolean FALSE
+    killall Finder
+
+  else
+
+    defaults write com.apple.finder AppleShowAllFiles -boolean TRUE
+    killall Finder
+
+  fi
+
+}
+
 
 #ALL GIT FUNCTIONS
 
