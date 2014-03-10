@@ -8,6 +8,10 @@ alias la='ls -a'
 alias c='clear'
 alias webd='cd /Applications/MAMP/htdocs/'
 
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+
 alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions'
 
 alias emulate='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
