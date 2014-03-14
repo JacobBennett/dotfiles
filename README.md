@@ -4,9 +4,7 @@
 * Source `~/.dotfiles/bash/functions` and `~/.dotfiles/bash/aliases` in one of these: `.bash_profile`, `.bashrc`, or `.zshrc`.
 
 ## Git Conf
-* Symlink both `gitmessage.txt` and `master_git_ignore` to `$HOME`
-
-  `ln -s ~/.dotfiles/git/gitmessage.txt ~/.gitmessage.txt`
+* Symlink `master_git_ignore` to `$HOME`
 
   `ln -s ~/.dotfiles/git/master_git_ignore ~/.master_git_ignore`
 
@@ -15,8 +13,6 @@
 ```
     [core]
       excludesfile = /Users/asimpson/.master_git_ignore
-    [commit]
-      template = /Users/asimpson/.gitmessage.txt
 ```
 
 ## Other Dependencies
