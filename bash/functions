@@ -5,20 +5,12 @@ function copykey() {
   cat ~/.ssh/id_rsa.pub | pbcopy
 }
 
-# php artisan shortcut
-function pa() {
-  php artisan "$@"
+function ip {
+  YELLOW="\033[33m"
+  IP=$(ifconfig | grep 'inet 1' | cut -c 6- | awk 'NR==2 {print $1}')
+  echo -e ${YELLOW}$IP
+  echo $IP | pbcopy
 }
-
-function pam() {
-  php artisan migrate $1 --env=local
-}
-
-function pal() {
-  php artisan "$@" --env=local
-}
-
-#show all files
 
 function showhidden() {
   if [ "$1" = "YES" ]; then
@@ -40,7 +32,23 @@ function showhidden() {
 
 }
 
-#ALL GIT FUNCTIONS
+
+#[php-artisan-start]
+function pa() {
+  php artisan "$@"
+}
+
+function pam() {
+  php artisan migrate $1 --env=local
+}
+
+function pal() {
+  php artisan "$@" --env=local
+}
+#[php-artisan-stop]
+
+
+#[git-start]
 
 function gb() {
   git branch "$@"
@@ -50,8 +58,6 @@ function gm() {
   git merge "$@"
 }
 
-#git shortcuts for pushing to
-#master or dev or generic
 function gp() {
   if [ "$1" = "m" ]; then
 
@@ -73,17 +79,15 @@ function gp() {
 
 }
 
-#git shortcut for git checkout
 function gch() {
   git checkout "$@"
 }
 
-#used to create a new branch and switch to it
 function gnb() {
   git checkout -b $1
 }
 
-#git commit shortcut
 function gcm() {
   git commit -m "$@"
 }
+#[git-end]
