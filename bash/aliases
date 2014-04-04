@@ -8,7 +8,7 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias webd='cd /Applications/MAMP/htdocs/'
-alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions; ~./dotfiles/bash/private_aliases'
+alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions; source ~./dotfiles/bash/private_aliases'
 alias emulate='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 alias facetime='sudo killall VDCAssistant'
 #[misc-end]
@@ -21,6 +21,7 @@ alias gl='git log --pretty=oneline --abbrev-commit'
 alias gll='git log --graph --pretty=format:'\''%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'\'''
 alias glll='git log --stat --abbrev-commit'
 alias gassume='update-index --assume-unchanged'
+alias gdetail='gitk --all &'
 #[git-end]
 
 #[screenshot-start]
