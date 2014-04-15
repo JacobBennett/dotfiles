@@ -7,14 +7,15 @@ alias la='ls -a'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
-alias webd='cd /Applications/MAMP/htdocs/'
-alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions; source ~./dotfiles/bash/private_aliases'
+alias webd='cd Documents/web/'
+alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions'
 alias emulate='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 alias facetime='sudo killall VDCAssistant'
+alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up"
 #[misc-end]
 
 #[git-start]
-alias gs='git status -s'
+alias gs='git status -sb'
 alias gaa='git add -A'
 alias gdiff='git diff | subl'
 alias gl='git log --pretty=oneline --abbrev-commit'
