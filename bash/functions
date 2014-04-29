@@ -1,10 +1,12 @@
 #ALL my custom BASH functions
 
-#copy rsa public key
+# copy rsa public key
 function copykey() {
   cat ~/.ssh/id_rsa.pub | pbcopy
 }
 
+
+# copy my ip to the clipboard and display it in the terminal
 function ip {
   YELLOW="\033[33m"
   IP=$(ifconfig | grep 'inet 1' | cut -c 6- | awk 'NR==2 {print $1}')
@@ -12,6 +14,7 @@ function ip {
   echo $IP | pbcopy
 }
 
+# show or hide hidden files in Finder window
 function showhidden() {
   if [ "$1" = "YES" ]; then
 
@@ -30,6 +33,11 @@ function showhidden() {
 
   fi
 
+}
+
+# cd into whatever is the forefront Finder window.
+cdf() {  # short for cdfinder
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
 
 

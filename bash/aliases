@@ -21,6 +21,7 @@ alias gdiff='git diff | subl'
 alias gl='git log --pretty=oneline --abbrev-commit'
 alias gll='git log --graph --pretty=format:'\''%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'\'''
 alias glll='git log --stat --abbrev-commit'
+alias gpom='git pull origin master'
 alias gassume='update-index --assume-unchanged'
 alias gdetail='gitk --all &'
 #[git-end]
