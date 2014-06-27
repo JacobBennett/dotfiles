@@ -1,5 +1,11 @@
 # Dotfiles
 
+## Bash Conf
+
+* Symlink `~/.dotfiles/bash/.bash_profile` to `$HOME`
+
+ `ln -s ~/.dotfiles/bash/.bash_profile ~/.bash_profile`
+ 
 ## Shell Conf
 * Source `~/.dotfiles/bash/functions` and `~/.dotfiles/bash/aliases` in one of these: `.bash_profile`, `.bashrc`, or `.zshrc`.
 
