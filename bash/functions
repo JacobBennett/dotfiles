@@ -98,4 +98,8 @@ function gnb() {
 function gcm() {
   git commit -m "$@"
 }
+
+function gar() {
+ git branch -u "$@"
+}
 #[git-end]
