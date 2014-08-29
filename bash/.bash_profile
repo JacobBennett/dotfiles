@@ -5,6 +5,8 @@ export PATH=/Applications/MAMP/bin/php/php5.5.10/bin:$PATH
 
 export PATH=${PATH}:/Applications/MAMP/Library/bin/mysql
 
+export PATH=${PATH}:~/.composer/vendor/bin
+
 source .dotfiles/bash/aliases
 source .dotfiles/bash/private_aliases
 source .dotfiles/bash/functions
