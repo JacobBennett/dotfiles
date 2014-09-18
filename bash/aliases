@@ -44,3 +44,11 @@ alias g:s="php artisan generate:seed"
 alias g:mig="php artisan generate:migration"
 alias g:r="php artisan generate:resource"
 #[laravel-end]
+
+#[iTerm-start]
+
+##uses tab function
+alias tpas="tab pa serve"
+alias tgw="tab gulp watch"
+alias startdev="tpas; tgw"
+#[iTerm-end]

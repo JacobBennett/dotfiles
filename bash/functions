@@ -57,7 +57,6 @@ function pal() {
 
 
 #[git-start]
-
 function gb() {
   git branch "$@"
 }
@@ -103,3 +102,19 @@ function gar() {
  git branch -u "$@"
 }
 #[git-end]
+
+#[iTerm-start]
+function tab() {
+  COMMAND="$@"
+  osascript -e "
+  tell application \"iTerm\"
+   tell the first terminal
+    launch session \"Default Session\"
+    tell the last session
+     write text \"cd $(pwd)\"
+     write text \"$COMMAND\"
+    end tell
+   end tell
+  end tell"
+}
+#[iTerm-end]
