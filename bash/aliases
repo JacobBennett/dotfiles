@@ -11,7 +11,6 @@ alias webd='cd Documents/web/'
 alias running='ps -ax'
 alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions'
 alias emulate='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
-alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up"
 alias gsw="gulp styles; gulp watch"
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 #[misc-end]
