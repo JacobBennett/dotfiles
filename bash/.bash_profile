@@ -1,7 +1,7 @@
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-export PATH=/Applications/MAMP/bin/php/php5.5.10/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.6.1/bin:$PATH
 
 export PATH=${PATH}:/Applications/MAMP/Library/bin/mysql
 
