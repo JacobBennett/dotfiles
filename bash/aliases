@@ -15,6 +15,12 @@ alias gsw="gulp styles; gulp watch"
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 #[misc-end]
 
+#[vagrant-homestead-start]
+alias hup='homestead up'
+alias hedit='homestead edit'
+alias hhalt='homestead halt'
+#[vagrant-homestead-end]
+
 #[git-start]
 alias gs='git status -sb'
 alias gaa='git add -A'
@@ -38,12 +44,12 @@ alias ssdone='killall SystemUIServer'
 
 #[laravel-start]
 #https://github.com/JeffreyWay/Laravel-4-Generators
-alias g:m="php artisan generate:model"
-alias g:c="php artisan generate:controller"
-alias g:v="php artisan generate:view"
-alias g:s="php artisan generate:seed"
+alias g:mod="php artisan generate:model"
+alias g:con="php artisan generate:controller"
+alias g:vie="php artisan generate:view"
+alias g:see="php artisan generate:seed"
 alias g:mig="php artisan generate:migration"
-alias g:r="php artisan generate:resource"
+alias g:res="php artisan generate:resource"
 alias facadehelper="wget https://gist.githubusercontent.com/barryvdh/5227822/raw/2251971d137c853b1ed073316f03b9c2037554b4/_ide_helper.php"
 #[laravel-end]
 
