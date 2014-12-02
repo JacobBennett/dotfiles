@@ -17,3 +17,6 @@ eval "$(rbenv init -)"
 
 # init z   https://github.com/rupa/z
 . ~/code/z/z.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

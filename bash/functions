@@ -40,6 +40,11 @@ cdf() {  # short for cdfinder
   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
 
+# search the history for a key term
+function hg {
+  history | grep --color=auto $1
+}
+
 
 #[php-artisan-start]
 function pa() {
