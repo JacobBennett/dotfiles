@@ -14,12 +14,16 @@
 
   `ln -s ~/.dotfiles/git/master_git_ignore ~/.master_git_ignore`
 
-* Add these files to `~/.gitconfig`:
+ * Add these files to `~/.gitconfig`:
 
-```
-    [core]
-      excludesfile = /Users/asimpson/.master_git_ignore
-```
+ ```
+     [core]
+       excludesfile = /Users/Jake/.master_git_ignore
+ ```
+
+* Symlink `git-completion.bash` to `$HOME`
+
+  `ln -s ~/.dotfiles/git/git-completion.bash ~/.git-completion.bash`
 
 ## Other Dependencies
 
