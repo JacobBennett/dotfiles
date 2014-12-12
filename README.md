@@ -10,15 +10,18 @@
 * Source `~/.dotfiles/bash/functions` and `~/.dotfiles/bash/aliases` in one of these: `.bash_profile`, `.bashrc`, or `.zshrc`.
 
 ## Git Conf
-* Symlink `master_git_ignore` to `$HOME`
+* Symlink both `gitmessage.txt` and `master_git_ignore` to `$HOME`
 
   `ln -s ~/.dotfiles/git/master_git_ignore ~/.master_git_ignore`
+  `ln -s ~/.dotfiles/git/gitmessage.txt ~/.gitmessage.txt`
 
  * Add these files to `~/.gitconfig`:
 
  ```
      [core]
        excludesfile = /Users/Jake/.master_git_ignore
+     [commit]
+       template = /Users/Jake/.gitmessage.txt
  ```
 
 * Symlink `git-completion.bash` to `$HOME`
