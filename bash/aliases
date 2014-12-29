@@ -13,7 +13,16 @@ alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/funct
 alias emulate='xcrun instruments -w "iPhone 5 (8.0 Simulator)"'
 alias gsw="gulp styles; gulp watch"
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
+alias quitapps='osascript -e '\''quit app "LYNC"'\''; osascript -e '\''quit app "MAIL"'\'''
+alias dayend='quitapps; eject'
 #[misc-end]
+
+#[drives-start]
+##http://hints.macworld.com/article.php?story=20120901094847629
+alias ejectlocal='osascript -e '\''tell application "Finder" to eject (every disk whose ejectable is true)'\'''
+alias ejectnetwork='find /Volumes -maxdepth 1 -not -user root -a -not -name '\''.*'\'' -print0 | xargs -0 umount'
+alias eject='ejectlocal; ejectnetwork; ejectweb'
+#[drives-end]
 
 #[vagrant-homestead-start]
 alias hup='homestead up'
