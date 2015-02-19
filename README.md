@@ -1,6 +1,6 @@
 # Dotfiles
 
-## Bash Conf
+## Bash Config
 
 * Symlink `~/.dotfiles/bash/.bash_profile` to `$HOME`
 
