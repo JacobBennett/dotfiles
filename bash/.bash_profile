@@ -7,6 +7,8 @@ export PATH=${PATH}:/Applications/MAMP/Library/bin/mysql
 
 export PATH=${PATH}:~/.composer/vendor/bin
 
+export PATH=${PATH}:~/usr/local/git/bin
+
 source .dotfiles/bash/aliases
 source .dotfiles/bash/private_aliases
 source .dotfiles/bash/functions
