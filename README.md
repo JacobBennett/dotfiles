@@ -28,6 +28,12 @@
 
   `ln -s ~/.dotfiles/git/git-completion.bash ~/.git-completion.bash`
 
+## SQLite Config
+
+* Symlink `~/.dotfiles/sqlite/.sqliterc` to `$HOME`
+
+ `ln -s ~/.dotfiles/sqlite/.sqliterc ~/.sqliterc`
+
 ## Other Dependencies
 
 * [Homebrew](http://brew.sh)
