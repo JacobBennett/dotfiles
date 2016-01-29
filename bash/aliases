@@ -28,6 +28,7 @@ alias eject='ejectlocal; ejectnetwork; ejectweb'
 alias hup='homestead up'
 alias hedit='homestead edit'
 alias hhalt='homestead halt'
+alias hreload='vagrant reload --provision'
 #[vagrant-homestead-end]
 
 #[git-start]

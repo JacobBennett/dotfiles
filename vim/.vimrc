@@ -1,6 +1,10 @@
+execute pathogen#infect()
 filetype plugin indent on
 syntax on
-colorscheme desert
+syntax enable
+set background=dark
+colorscheme material-theme
+set t_Co=256
 
 " map esc to k j  
 inoremap kj <Esc>
