@@ -62,38 +62,6 @@ function pal() {
 
 
 #[git-start]
-function gb() {
-  git branch "$@"
-}
-
-function gm() {
-  git merge "$@"
-}
-
-function gp() {
-  if [ "$1" = "m" ]; then
-
-    git push origin master
-
-  elif [ "$1" = "d" ]; then
-
-    git push origin dev
-
-  elif [ "$1" = "f" ]; then
-
-    git push fortrabbit master
-
-  else
-
-    git push "$@"
-
-  fi
-
-}
-
-function gch() {
-  git checkout "$@"
-}
 
 function gnb() {
   git checkout -b $1

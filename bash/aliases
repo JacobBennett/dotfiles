@@ -33,7 +33,12 @@ alias hreload='vagrant reload --provision'
 
 #[git-start]
 alias gs='git status -sb'
+alias gb='git branch'
 alias gaa='git add -A :/'
+alias gch='git checkout'
+alias gm='git merge'
+alias gpush='git push'
+alias gpull='git pull'
 alias gdiff='git diff | subl'
 alias gl='git log --pretty=oneline --abbrev-commit'
 alias gll='git log --graph --pretty=format:'\''%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'\'''
