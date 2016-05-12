@@ -123,3 +123,11 @@ function tab() {
   end tell"
 }
 #[iTerm-end]
+
+function serve-new() {
+  if [ "$1" == "-h" ]; then
+    echo "Usage: serve-new domain.dev folder-to-map-to"
+  fi 
+
+  serve $1 /home/vagrant/Code/$2/public
+}
