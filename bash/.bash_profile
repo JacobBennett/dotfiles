@@ -12,7 +12,7 @@ export PATH=${PATH}:~/usr/local/git/bin
 source .dotfiles/bash/aliases
 source .dotfiles/bash/private_aliases
 source .dotfiles/bash/functions
-source .dotfiles/bash/bash_prompt
+# source .dotfiles/bash/bash_prompt
 
 # enable rbenv stuff
 eval "$(rbenv init -)"
@@ -22,9 +22,3 @@ eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# Set CLICOLOR if you want Ansi Colors in iTerm2 
-export CLICOLOR=1
-
-# Set colors to match iTerm2 Terminal Colors
-export TERM=xterm-256color
