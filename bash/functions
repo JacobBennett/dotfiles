@@ -67,9 +67,6 @@ function gnb() {
   git checkout -b $1
 }
 
-function gcm() {
-  git commit -m "$@"
-}
 
 function gar() {
  git branch -u "$@"

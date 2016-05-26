@@ -49,17 +49,13 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git laravel5 brew npm osx)
 
 # User configuration
 
 export PATH="/usr/local/heroku/bin:/Users/Jake/.rbenv/shims:/Applications/MAMP/bin/php/php5.6.1/bin:/Users/Jake/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Applications/MAMP/Library/bin/mysql:/Users/Jake/.composer/vendor/bin:/Users/Jake/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-#source .dotfiles/bash/aliases
-#source .dotfiles/bash/private_aliases
-#source .dotfiles/bash/functions
-#source .dotfiles/bash/bash_prompt
 source $ZSH/oh-my-zsh.sh
 
 if [ -f ~/.bash_profile ]; then
