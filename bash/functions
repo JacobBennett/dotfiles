@@ -96,3 +96,7 @@ function serve-new() {
 
   serve $1 /home/vagrant/Code/$2/public
 }
+
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}

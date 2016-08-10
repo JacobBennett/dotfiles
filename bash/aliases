@@ -12,7 +12,7 @@ alias running='ps -ax'
 alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions'
 alias emulate='xcrun instruments -w "iPhone 5 (8.0 Simulator)"'
 alias gsw="gulp styles; gulp watch"
-alias vm='ssh vagrant@127.0.0.1 -p 2222'
+alias vm='homestead ssh'
 alias quitapps='osascript -e '\''quit app "LYNC"'\''; osascript -e '\''quit app "MAIL"'\'''
 alias dayend='quitapps; eject'
 #[misc-end]
