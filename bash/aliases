@@ -38,34 +38,19 @@ alias gaa='git add -A :/'
 alias gch='git checkout'
 alias gcm='git commit -m'
 alias gm='git merge'
-alias gpush='git push'
-alias gpull='git pull'
+alias gpusho='git push origin'
+alias gpullo='git pull origin'
 alias gdiff='git diff | subl'
 alias gl='git log --pretty=oneline --abbrev-commit'
 alias gll='git log --graph --pretty=format:'\''%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'\'''
 alias glll='git log --stat --abbrev-commit'
-alias gpom='git pull origin master'
+alias gpo='git pull origin'
 alias gassume='update-index --assume-unchanged'
 alias gdetail='gitk --all &'
 #[git-end]
 
-#[screenshot-start]
-# use --name or --location after ss
-# then call ssdone when finished with changes
-alias ss='defaults write com.apple.screencapture'
-alias ssshadow='defaults write com.apple.screencapture disable-shadow -bool false'
-alias ssnoshadow='defaults write com.apple.screencapture disable-shadow -bool true'
-alias ssdone='killall SystemUIServer'
-#[screenshot-end]
-
 #[laravel-start]
-#https://github.com/JeffreyWay/Laravel-4-Generators
-alias g:mod="php artisan generate:model"
-alias g:con="php artisan generate:controller"
-alias g:vie="php artisan generate:view"
-alias g:see="php artisan generate:seed"
-alias g:mig="php artisan generate:migration"
-alias g:res="php artisan generate:resource"
+alias pa="php artisan"
 alias facadehelper="wget https://gist.githubusercontent.com/barryvdh/5227822/raw/2251971d137c853b1ed073316f03b9c2037554b4/_ide_helper.php"
 #[laravel-end]
 

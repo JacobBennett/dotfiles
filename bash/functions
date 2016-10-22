@@ -45,12 +45,6 @@ function hg {
   history | grep --color=auto $1
 }
 
-
-#[php-artisan-start]
-function pa() {
-  php artisan "$@"
-}
-
 function pam() {
   php artisan migrate $1 --env=local
 }

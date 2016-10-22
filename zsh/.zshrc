@@ -49,13 +49,15 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git laravel5 brew npm osx)
+plugins=(git laravel5 brew npm osx symfony-console)
 
 # User configuration
 
 export PATH="/usr/local/heroku/bin:/Users/Jake/.rbenv/shims:/Users/Jake/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/Jake/.composer/vendor/bin:/Users/Jake/usr/local/git/bin"
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export SYMFONY_CONSOLE_TOOLS="composer valet artisan"
 
 source $ZSH/oh-my-zsh.sh
 
