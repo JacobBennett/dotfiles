@@ -15,6 +15,7 @@ alias gsw="gulp styles; gulp watch"
 alias vm='homestead ssh'
 alias quitapps='osascript -e '\''quit app "LYNC"'\''; osascript -e '\''quit app "MAIL"'\'''
 alias dayend='quitapps; eject'
+alias s='pmset displaysleepnow'
 #[misc-end]
 
 #[drives-start]
