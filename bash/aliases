@@ -10,12 +10,13 @@ alias ....='cd ../../../'
 alias webd='cd Documents/web/'
 alias running='ps -ax'
 alias bashsource='source ~/.dotfiles/bash/aliases; source ~/.dotfiles/bash/functions'
-alias emulate='xcrun instruments -w "iPhone 5 (8.0 Simulator)"'
 alias gsw="gulp styles; gulp watch"
 alias vm='homestead ssh'
 alias quitapps='osascript -e '\''quit app "LYNC"'\''; osascript -e '\''quit app "MAIL"'\'''
 alias dayend='quitapps; eject'
 alias s='pmset displaysleepnow'
+alias ioff='networksetup -setairportpower airport off'
+alias ion='networksetup -setairportpower airport on'
 #[misc-end]
 
 #[drives-start]
