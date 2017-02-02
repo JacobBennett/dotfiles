@@ -15,8 +15,8 @@ alias vm='homestead ssh'
 alias quitapps='osascript -e '\''quit app "LYNC"'\''; osascript -e '\''quit app "MAIL"'\'''
 alias dayend='quitapps; eject'
 alias s='pmset displaysleepnow'
-alias ioff='networksetup -setairportpower airport off'
-alias ion='networksetup -setairportpower airport on'
+alias ioff='networksetup -setairportpower en0 off'
+alias ion='networksetup -setairportpower en0 on'
 #[misc-end]
 
 #[drives-start]
