@@ -56,6 +56,11 @@ alias pa="php artisan"
 alias facadehelper="wget https://gist.githubusercontent.com/barryvdh/5227822/raw/2251971d137c853b1ed073316f03b9c2037554b4/_ide_helper.php"
 #[laravel-end]
 
+#[composer-start]
+alias ci="composer install"
+alias cu="composer update"
+#[composer-end]
+
 #[iTerm-start]
 
 ##uses tab function
