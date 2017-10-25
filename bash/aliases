@@ -49,6 +49,7 @@ alias glll='git log --stat --abbrev-commit'
 alias gpo='git pull origin'
 alias gassume='update-index --assume-unchanged'
 alias gdetail='gitk --all &'
+alias git-last-month='git log --before={`date "+%Y-%m-01"`} --after={`date -v-1m "+%Y-%m-01"`} --author="`git config user.name`" --reverse --pretty=format:"%cd  %h  %s" --date=short'
 #[git-end]
 
 #[laravel-start]
