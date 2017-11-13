@@ -69,3 +69,9 @@ alias tpas="tab pa serve"
 alias tgw="tab gulp watch"
 alias startdev="tpas; tgw"
 #[iTerm-end]
+
+alias ::='vendor/bin/phpunit'
+alias ::-='vendor/bin/phpunit --filter'
+
+alias minios='minio server ~/Documents/web/minio/u'
+alias rediss='redis-server /usr/local/etc/redis.conf'
