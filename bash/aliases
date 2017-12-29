@@ -1,7 +1,13 @@
 #ALL my custom BASH aliases
 # find more cool ones at http://alias.sh/most-popular/usage
 
+alias focus="slack chat send --channel '#devs' --text ':brain: getting into deep focus mode for a bit, if you need me come knock on my door' --title 'Deep Focus' && slack presence away"
+
+alias endfocus="slack chat send --channel '#devs' --text ':brain: Out of deep focus mode!!' --title 'Available' && slack presence active"
+
 #[misc-start]
+alias size='ncdu'
+alias z='j'
 alias c='clear'
 alias la='ls -a'
 alias ..='cd ..'

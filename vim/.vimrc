@@ -1,9 +1,9 @@
-execute pathogen#infect()
+" execute pathogen#infect()
 filetype plugin indent on
 syntax on
 syntax enable
 set background=dark
-colorscheme material-theme
+" colorscheme material-theme
 set t_Co=256
 
 " map esc to k j  

@@ -56,8 +56,7 @@ plugins=(git laravel5 brew npm osx symfony-console)
 export PATH="/usr/local/heroku/bin:/Users/Jake/.rbenv/shims:/Users/Jake/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/Jake/.composer/vendor/bin:/Users/Jake/usr/local/git/bin:/usr/local/go/bin"
 
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
-export PATH="$(go env GOPATH)/bin:$PATH"
-export GOPATH=$(go env GOPATH)
+export PATH="~/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export SYMFONY_CONSOLE_TOOLS="composer valet artisan"
@@ -89,3 +88,8 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#auto jump stuff
+source /usr/local/etc/autojump.sh
+
+fpath=(/usr/local/share/zsh-completions $fpath)
