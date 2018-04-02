@@ -6,6 +6,7 @@ alias focus="slack chat send --channel '#devs' --text ':brain: getting into deep
 alias endfocus="slack chat send --channel '#devs' --text ':brain: Out of deep focus mode!!' --title 'Available' && slack presence active"
 
 #[misc-start]
+alias hosts='sudo vim /etc/hosts'
 alias size='ncdu'
 alias z='j'
 alias c='clear'
@@ -77,7 +78,8 @@ alias startdev="tpas; tgw"
 #[iTerm-end]
 
 alias ::='vendor/bin/phpunit'
+alias phpunit='vendor/bin/phpunit'
 alias ::-='vendor/bin/phpunit --filter'
 
-alias minios='minio server ~/Documents/web/minio/u'
+alias minios='minio server ~/cruft/minio'
 alias rediss='redis-server /usr/local/etc/redis.conf'

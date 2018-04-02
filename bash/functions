@@ -61,36 +61,23 @@ function gnb() {
   git checkout -b $1
 }
 
-
 function gar() {
  git branch -u "$@"
 }
 #[git-end]
 
 #[iTerm-start]
-function tab() {
-  COMMAND="$@"
-  osascript -e "
-  tell application \"iTerm\"
-   tell the first terminal
-    launch session \"Default Session\"
-    tell the last session
-     write text \"cd $(pwd)\"
-     write text \"$COMMAND\"
-    end tell
-   end tell
-  end tell"
-}
+#function tab() {
+  #COMMAND="$@"
+  #osascript -e "
+  #tell application \"iTerm\"
+   #tell the first terminal
+    #launch session \"Default Session\"
+    #tell the last session
+     #write text \"cd $(pwd)\"
+     #write text \"$COMMAND\"
+    #end tell
+   #end tell
+  #end tell"
+#}
 #[iTerm-end]
-
-function serve-new() {
-  if [ "$1" == "-h" ]; then
-    echo "Usage: serve-new domain.dev folder-to-map-to"
-  fi 
-
-  serve $1 /home/vagrant/Code/$2/public
-}
-
-function homestead() {
-    ( cd ~/Homestead && vagrant $* )
-}
